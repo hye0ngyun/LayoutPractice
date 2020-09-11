@@ -26,6 +26,7 @@ article{
     background-color: #ffffff;
     padding-left: 50px;
     border: solid 0.5px #bcfffe;
+    border-right: none;
 }
 footer{
     width: 100%;
@@ -85,4 +86,11 @@ h2{
 }
 .toc1{
     align-self: center;
+}
+ul{
+    margin-bottom: 10px;
+}
+#active{
+    background-color: #ade498;
+    border: solid 2px #ade498;
 }
