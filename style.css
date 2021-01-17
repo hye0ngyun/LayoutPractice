@@ -18,11 +18,12 @@ header{
     width: 100%;
 }
 nav{
-    width: 25vh;
+    flex: 0 0 150px;
     background-color: #f6f5f5;
 }
 article{
-    width: 100%;
+    flex: 0 1 auto;
+    overflow: hidden;
     background-color: #ffffff;
     padding-left: 50px;
     border: solid 0.5px #bcfffe;
@@ -93,4 +94,11 @@ ul{
 #active{
     background-color: #ade498;
     border: solid 2px #ade498;
+}
+img{
+    /* width: 400px; */
+    height: fit-content;
+    border: 1px solid rgb(0, 174, 255);
+    padding: 3px;
+    border-radius: 10px;
 }
