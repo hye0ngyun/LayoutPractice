@@ -12,59 +12,49 @@
         }
         #flex-layout-wrap{
             display: flex;
-            flex-flow: row wrap;
+            flex-direction: column;
             min-height: 100vh;
         }
-        #header{
-            flex:0 1 100%;
-            text-align: center;
-            background: coral;
-            height: 150px;
-        }
-        #main-wrap{
-            flex: 1 1 100%;
+        #nav{
             display: flex;
         }
+        #header{
+            background: cornflowerblue;
+            text-align: center;
+            padding: 1.5rem;
+        }
+        #main-wrap{
+            display: flex;
+            flex-flow: row wrap;
+        }
         #nav{
-            flex: 0 150px;
-            padding: 25px;
-            background: aquamarine;
+            width: 100%;
         }
         #main-section{
-            flex: 1 1 auto;
-            background: blueviolet;
+            flex: 1 auto;
+            padding: 1.5rem;
         }
-        #footer{
-            flex: 0 1 auto;
-            height: 100px;
+        #nav .item{
+            flex:1 1 auto;
+            background: slateblue;
+            border: 1px solid black;
+            transition: .5s;
+        }
+        #nav .item a{
+            display: block;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        #nav .item:hover{
+            flex:1.5 1 auto;
             background: darkgray;
         }
-        @media (max-width:1024px){
-            #main-wrap{
-                flex-flow: row wrap;
-            }
-            #nav{
-                width: 100%;
-                padding: 0;
-                display: flex;
-                /* height: ; */
-                /* flex: 0 0 0; */
-            }
-            #main-section{
-                width: 100%;
-            }
-            #nav .item{
-                /* border: 1px solid red; */
-                flex: 1 1 150px;
-            }
-            #nav .item:hover{
-                flex: 1.5 1 150px
-            }
-            #nav .item a{
-                flex: 1;
-                display: block;
-                padding: 1em;
-            }
+        #nav .item a:hover{
+            color: black;
+        }
+        #main-section{
+            flex:1 1 20px;
         }
     </style>
 
@@ -95,6 +85,7 @@
             </nav>
             <!-- main-section -->
             <section id="main-section">
+                <div>a</div>
                 a
             </section>
         </div>
