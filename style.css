@@ -22,7 +22,7 @@ nav{
     background-color: #f6f5f5;
 }
 article{
-    flex: 0 1 auto;
+    flex: 1 1 auto;
     overflow: hidden;
     background-color: #ffffff;
     padding-left: 50px;
@@ -36,11 +36,16 @@ footer{
     background-color: #dddddd;
     text-align: center;
 }
-nav ul{
+#nav-wrap{
     border: solid 1px black;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     position: sticky;
-    top: 16px;
+    top: 50px;
+    margin: 0;
+}
+#nav-title{
+    font-weight: bold;
+    text-align: center;
 }
 nav ul{
     list-style-type: none;
