@@ -4,82 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            text-decoration: none;
-        }
-        #flex-layout-wrap{
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        #header{
-            background: cornflowerblue;
-            text-align: center;
-            padding: 1.5rem;
-        }
-        #main-wrap{
-            display: flex;
-            flex-flow: column;
-            flex:1 auto;
-            align-content: flex-start;
-        }
-        #nav{
-            /* width: 100%; */
-            /* height: fit-content; */
-            display: flex;
-        }
-        #main-section{
-            flex: 1 auto;
-            padding: 1.5rem;
-            background: khaki;
-        }
-        #nav .item{
-            flex:1 1 auto;
-            background: slateblue;
-            border: 1px solid black;
-            transition: .5s;
-        }
-        #nav .item a{
-            display: block;
-            color: white;
+        #aside{
             padding: 1em;
+            border: 1px solid #a2a9b1;
+            display: inline-flex;
+            flex-wrap: wrap;
+            background: #f8f9fa;
+            margin-right: auto;
+            justify-self: center;
+        }
+        #aside ul{
+            padding-inline-start: 1em;
+            list-style-type: none;
+            font-size: .95em;
+        }
+        #aside ul li{
+            margin: 10px 0;
+        }
+        #aside a{
+            color: #0645ad;
+        }
+        #aside a:hover span{
+            text-decoration: underline;
+        }
+        #aside a:visited{
+            color: #0f3057;
+        }
+        .toc1{
+            flex-basis: 100%;
             text-align: center;
         }
-        #nav .item:hover{
-            flex:1.5 1 auto;
-            background: darkgray;
-        }
-        #nav .item a:hover{
-            color: black;
-        }
-        #main-section{
-            flex:1 1 20px;
-        }
-        #footer{
-            padding: 1.5em;
-            text-align: center;
-            background: lemonchiffon;
-            border-top: lavender 1px solid;
-        }
-        @media (min-width:1024px){
-            #main-wrap{
-                flex-flow: row;
-            }
-            #nav{
-                position: sticky;
-                top: 0;
-                /* width: 100%; */
-                /* height: fit-content; */
-                height: fit-content;
-                flex-flow: column;
-                flex:0 1 auto;
-            }
+        #article h2{
+            margin-top: 1em;
+            margin-bottom: 0.25em;
+            border-bottom: 1px solid #a2a9b1;
+            font-size: 1.5em;
         }
     </style>
-
 </head>
 <body>
     <div id="flex-layout-wrap">
@@ -92,23 +55,106 @@
         <div id="main-wrap">
             <!-- nav -->
             <nav id="nav">
-                <div class="item">
+                <div class="nav-item">
                     <a href="#">HOME</a>
                 </div>
-                <div class="item">
+                <div class="nav-item">
                     <a href="#">Basic Work</a>
                 </div>
-                <div class="item">
+                <div class="nav-item">
                     <a href="#">Specific Work</a>
                 </div>
-                <div class="item">
+                <div class="nav-item">
                     <a href="#">Work Register</a>
                 </div>
             </nav>
             <!-- main-section -->
             <section id="main-section">
-                <div>a</div>
-                a
+                <aside id="aside">
+                    <span class="toc1">목차</span>
+                    <ul>
+                        <li>
+                            <a href="#A">
+                                <span class="num">1</span>
+                                <span >시작 & 마감업무</span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="#A1">
+                                        <span class="num">1.1</span>
+                                        <span>시작업무(09:00~ 근무자)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#A2">
+                                        <span class="num">1.2</span>
+                                        <span>마감업무(~18:00 근무자)</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#B">
+                                <span class="num">2</span>
+                                <span>대출 & 반납</span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="#B1">
+                                        <span class="num">2.1</span>
+                                        <span>대출</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#B2">
+                                        <span class="num">2.2</span>
+                                        <span>반납</span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="#B21">
+                                                <span class="num">2.2.1</span>
+                                                <span>연체료</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#C">
+                                <span class="num">3</span>
+                                <span>청구기호 & 도서배가</span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="#C1">
+                                        <span class="num">3.1</span>
+                                        <span>청구기호</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#C2">
+                                        <span class="num">3.2</span>
+                                        <span>도서배가</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#D">
+                                <span class="num">4</span>
+                                <span>상호대차</span>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+                <article id="article">
+                    <h2><span id="A">시작 & 마감업무</span></h2>
+                    <h2><span id="B">대출 & 반납</span></h2>
+                    <h2><span id="C">청구기호 & 도서배가</span></h2>
+                    <h2><span id="D">상호대차</span></h2>
+                </article>
             </section>
         </div>
         <!-- footer -->
