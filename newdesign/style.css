@@ -21,6 +21,8 @@
             align-content: flex-start;
         }
         #nav{
+            position: sticky;
+            top: 0;
             /* width: 100%; */
             /* height: fit-content; */
             display: flex;
@@ -58,6 +60,9 @@
             background: lemonchiffon;
             border-top: lavender 1px solid;
         }
+        .top{
+            display: none;
+        }
         @media (min-width:1024px){
             #main-wrap{
                 flex-flow: row;
@@ -70,5 +75,8 @@
                 height: fit-content;
                 flex-flow: column;
                 flex:0 1 auto;
+            }
+            .top{
+                display: inline;
             }
         }
