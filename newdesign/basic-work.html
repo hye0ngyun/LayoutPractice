@@ -3,76 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>Basic Work</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        #aside{
-            padding: 1em;
-            border: 1px solid #a2a9b1;
-            display: inline-flex;
-            flex-wrap: wrap;
-            background: #f8f9fa;
-            margin-right: auto;
-            justify-self: center;
-        }
-        #aside ul{
-            padding-inline-start: 1em;
-            list-style-type: none;
-            font-size: .95em;
-        }
-        #aside ul li{
-            margin: 10px 0;
-        }
-        #aside a{
-            color: #0645ad;
-        }
-        #aside a:hover span{
-            text-decoration: underline;
-        }
-        #aside a:visited{
-            color: #0f3057;
-        }
-        #aside a:focus{
-            color: blueviolet;
-        }
-        .toc1{
-            flex-basis: 100%;
-            text-align: center;
-        }
-        #article h2{
-            margin-top: 1em;
-            margin-bottom: 0.25em;
-            border-bottom: 1px solid #a2a9b1;
-            font-size: 1.5em;
-        }
-        #main-section #article h3, p{
-            margin-top: 0.5em;
-            max-width: 1000px;
-        }
-        #main-section #article img{
-            margin-top: 0.5em;
-            border: 1px solid #bee5d3;
-            border-radius: 10px;
-        }
-        #main-section #article .small-img{
-            width: 350px;
-        }
-        #main-section #article .big-img{
-            width: 700px;
-        }
-        .num{
-            color: black;
-        }
-        #main-section #article ol{
-            margin: auto;
-            padding-left: 20px;
-            margin-top: 0.5em;
-        }
-        #main-section #article ol li{
-            margin-top: 0.5em;
-        }
-
-    </style>
 </head>
 <body>
     <div id="flex-layout-wrap">
@@ -80,11 +12,10 @@
         <header id="header">
             <h1>학술정보팀 위키</h1>
         </header>
-
         <!-- main-content -->
         <div id="main-wrap">
             <!-- nav -->
-            <nav id="nav">
+            <!-- <nav id="nav">
                 <div class="nav-item">
                     <a href="#">HOME</a>
                 </div>
@@ -100,10 +31,11 @@
                 <div class="nav-item top">
                     <a href="#">Top</a>
                 </div>
-            </nav>
+            </nav> -->
+            <script src="./section/nav.js"></script>
             <!-- main-section -->
             <section id="main-section">
-                <aside id="aside">
+                <!-- <aside id="aside">
                     <span class="toc1">목차</span>
                     <ul>
                         <li>
@@ -181,7 +113,8 @@
                             </a>
                         </li>
                     </ul>
-                </aside>
+                </aside> -->
+                <script src="./section/toc1.js"></script>
                 <article id="article">
                     <h2><span id="A">시작 & 마감업무</span></h2>
                     <div id="A1">
@@ -246,7 +179,7 @@
                     <h2><span id="C">청구기호 & 도서배가</span></h2>
                     <div id="C1">
                         <h3>3.1 청구기호</h3>
-                        <style>
+                        <!-- <style>
                             ol {
                             counter-reset: item
                             }
@@ -257,7 +190,7 @@
                             content: counters(item, ".") " ";
                             counter-increment: item
                             }
-                        </style>
+                        </style> -->
                         <ol>
                             <li>분류번호</li>
                             <p>
@@ -283,8 +216,8 @@
                             <p>
                                 C는 복본(COPY)을 뜻한다.
                             </p>
-                            <img class="big-img" src="src/B&R/14_청구기호.jpg" alt="청구기호">
                         </ol>
+                        <img class="big-img" src="src/B&R/14_청구기호.jpg" alt="청구기호">
                     </div>
                     <div id="C2">
                         <h3>3.2 도서배가</h3>
@@ -302,9 +235,10 @@
             </section>
         </div>
         <!-- footer -->
-        <footer id="footer">
+        <!-- <footer id="footer">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, saepe!
-        </footer>
+        </footer> -->
+        <script src="./section/footer.js"></script>
     </div>
 </body>
 </html>
