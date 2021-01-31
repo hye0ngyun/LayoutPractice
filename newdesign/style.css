@@ -109,7 +109,7 @@
         #aside a:focus{
             color: blueviolet;
         }
-        .toc1{
+        .toc{
             flex-basis: 100%;
             text-align: center;
         }
@@ -144,4 +144,18 @@
         }
         #main-section #article ol li{
             margin-top: 0.5em;
+        }
+        /* footer */
+        #footer{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 20px 0px;
+        }
+        #footer .footer-content{
+            text-align: start;
+            align-self: center;
+        }
+        #footer .footer-sitemap, #footer .footer-ext-link{
+            align-self: end;
         }

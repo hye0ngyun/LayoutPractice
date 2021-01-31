@@ -1,6 +1,6 @@
-var toc1 = `
+var bw_toc = `
 <aside id="aside">
-    <span class="toc1">목차</span>
+    <span class="toc">목차</span>
     <ul>
         <li>
             <a href="#A">
@@ -79,4 +79,4 @@ var toc1 = `
     </ul>
 </aside>
 `;
-document.write(toc1);
+document.write(bw_toc);
